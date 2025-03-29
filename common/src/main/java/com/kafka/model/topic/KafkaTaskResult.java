@@ -1,4 +1,4 @@
-package com.kafka.model.kafka;
+package com.kafka.model.topic;
 
 import java.io.Serializable;
 import java.util.UUID;
