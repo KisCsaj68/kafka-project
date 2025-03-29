@@ -10,12 +10,17 @@ public class KafkaTopicConfig {
 
   @Bean
   public NewTopic statusTopic() {
-    return TopicBuilder.name("status").replicas(3).build();
+    return TopicBuilder.name("status").partitions(3).build();
   }
 
   @Bean
   public NewTopic resultTopic() {
-    return TopicBuilder.name("result").replicas(3).build();
+    return TopicBuilder.name("result").partitions(3).build();
   }
-  
+
+  @Bean
+  public NewTopic taskTopic() {
+    return TopicBuilder.name("task").partitions(3).build();
+  }
+
 }

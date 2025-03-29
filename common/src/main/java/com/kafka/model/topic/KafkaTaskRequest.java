@@ -1,4 +1,4 @@
-package com.kafka.model.mq;
+package com.kafka.model.kafka;
 
 import java.util.UUID;
 import lombok.AllArgsConstructor;
